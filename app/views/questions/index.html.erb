@@ -19,7 +19,9 @@
         <td><%= question.titre %></td>
         <td><%= question.question %></td>
         <td><%= question.created_at.to_date %></td>
-        <td><%= link_to 'Show', question, class: 'btn btn-info' %></td>
+        <td>     <%= link_to question, class: 'navbar-brand' do %>
+      <i class="fa fa-eye"></i>
+      <% end %></td>
       </tr>
     <% end %>
   </tbody>
