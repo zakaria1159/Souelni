@@ -11,7 +11,7 @@ class QuestionsController < ApplicationController
             flash[:success] = "Question Envoyée"
             redirect_to root_path
         else
-            flash[:error] = "La Question n'as pas été envoyée"
+            flash[:danger] = "La Question n'as pas été envoyée, veuillez remplir tous les champs"
             redirect_to new_question_path 
         end
     end
